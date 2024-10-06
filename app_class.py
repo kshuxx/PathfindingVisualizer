@@ -69,9 +69,6 @@ class App:
     def render_main_menu(self):
         self.screen.blit(self.main_menu_background, (0, 0))  # draw background
         self.render_main_menu_buttons()
-        draw_text(
-            'Made By: Seung Jae Yang', self.screen, [1200, 720], 28,
-            settings.WHITE, settings.FONT, centered=False)
         pygame.display.update()
 
     def handle_main_menu_events(self):
